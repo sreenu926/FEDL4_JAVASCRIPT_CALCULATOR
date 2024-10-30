@@ -331,6 +331,10 @@
       );
     }
   }
+
+      // 4. Output and Formula Classes:
+          // These simple classes represent the output screen and formula screen, respectively.
+          // Their render functions display the current value and formula using the props received.
   
   class Output extends React.Component {
     render() {
@@ -341,6 +345,7 @@
       );
     }
   }
+  
   class Formula extends React.Component {
     render() {
       return React.createElement(
@@ -350,6 +355,7 @@
       );
     }
   }
+  
   ReactDOM.render(
     React.createElement(Calculator, null),
     document.getElementById("app")
