@@ -1,4 +1,5 @@
 @import "https://fonts.googleapis.com/css?family=Share+Tech+Mono";
+
 @font-face {
   font-family: "Digital";
   src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot");
@@ -21,7 +22,7 @@
 }
 
 body {
-  background: #92c2a6;
+  background: #205d39;
   -webkit-touch-callout: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -37,7 +38,7 @@ body {
   width: 320px;
   position: relative;
   border-radius: 10px;
-  box-shadow: 0 0 20px 2px black;
+  box-shadow: 0 0 40px 2px rgb(245, 212, 4);
 }
 
 .formulaScreen {
@@ -82,7 +83,7 @@ button {
 }
 button:hover {
   color: black;
-  outline: 0.05em solid grey;
+  outline: 0.1em solid rgb(242, 240, 240);
   z-index: 3;
 }
 
@@ -101,6 +102,6 @@ button:hover {
 }
 .author a {
   text-decoration: none;
-  color: #44264d;
+  color: #760072;
   line-height: 36px;
 }
