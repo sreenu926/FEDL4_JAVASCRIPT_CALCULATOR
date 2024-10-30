@@ -195,6 +195,12 @@
       );
     }
   }
+
+    // 3. Buttons Class:
+        // This class represents the collection of buttons on the calculator.
+        // The render function creates individual buttons for each number, operator, and clear function.
+        // Each button has a unique ID, value, and style applied based on its type.
+        // Button clicks trigger the corresponding handler functions passed as props (e.g., onClick={this.props.operators}).
   
   class Buttons extends React.Component {
     render() {
@@ -325,6 +331,7 @@
       );
     }
   }
+  
   class Output extends React.Component {
     render() {
       return React.createElement(
