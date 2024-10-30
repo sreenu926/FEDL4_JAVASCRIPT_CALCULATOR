@@ -355,9 +355,15 @@
       );
     }
   }
-  
+
+    // 5. Rendering the Calculator:
+        // ReactDOM.render takes a React element and injects it into the DOM element with the ID "app".
+        // In this case, it renders an instance of the Calculator class.
+
   ReactDOM.render(
     React.createElement(Calculator, null),
     document.getElementById("app")
   );
 })();
+
+  // Overall, this code creates a functional calculator that allows users to input numbers, operators, and decimals, perform calculations, and reset the state.
