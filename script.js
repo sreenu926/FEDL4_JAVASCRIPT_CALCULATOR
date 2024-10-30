@@ -1,8 +1,13 @@
 (function () {
-  "use strict";
+  // Initial setup: Regular expressions are defined to match operators, numbers ending with operators, and negative signs.
+  // Styles are defined for different button types (clear, operator, equals).
+  
+  "use strict"; // Enforce Strict Coding Practices
+  
   const isOperator = /[x/+-]/,
     endsWithOperator = /[x+-/]$/,
     endsWithNegativeSign = /\d[x/+-]{1}-$/,
+    
     clearStyle = { background: "#ac3939" },
     operatorStyle = { background: "#666666" },
     equalsStyle = {
@@ -11,6 +16,7 @@
       height: 130,
       bottom: 5,
     };
+  
   class Calculator extends React.Component {
     constructor(e) {
       super(e),
