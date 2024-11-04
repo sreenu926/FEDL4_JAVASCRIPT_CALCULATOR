@@ -195,11 +195,10 @@
     }
   }
 
-  // 3. Buttons Class:
-  // This class represents the collection of buttons on the calculator.
-  // The render function creates individual buttons for each number, operator, and clear function.
-  // Each button has a unique ID, value, and style applied based on its type.
-  // Button clicks trigger the corresponding handler functions passed as props (e.g., onClick={this.props.operators}).
+      // 3. Buttons Class: This class represents the collection of buttons on the calculator.
+          // The render function creates individual buttons for each number, operator, and clear function.
+              // Each button has a unique ID, value, and style applied based on its type.
+              // Button clicks trigger the corresponding handler functions passed as props (e.g., onClick={this.props.operators}).
 
   class Buttons extends React.Component {
     render() {
@@ -331,9 +330,9 @@
     }
   }
 
-  // 4. Output and Formula Classes:
-  // These simple classes represent the output screen and formula screen, respectively.
-  // Their render functions display the current value and formula using the props received.
+      // 4. Output and Formula Classes:
+          // These simple classes represent the output screen and formula screen, respectively.
+          // Their render functions display the current value and formula using the props received.
 
   class Output extends React.Component {
     render() {
@@ -355,9 +354,9 @@
     }
   }
 
-  // 5. Rendering the Calculator:
-  // ReactDOM.render takes a React element and injects it into the DOM element with the ID "app".
-  // In this case, it renders an instance of the Calculator class.
+      // 5. Rendering the Calculator:
+          // ReactDOM.render takes a React element and injects it into the DOM element with the ID "app".
+          // In this case, it renders an instance of the Calculator class.
 
   ReactDOM.render(
     React.createElement(Calculator, null),
