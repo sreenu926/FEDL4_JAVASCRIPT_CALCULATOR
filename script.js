@@ -16,23 +16,20 @@
       bottom: 5,
     };
 
-  // 2. Calculator Class: This class represents the calculator itself and inherits from React.Component.
-  // The constructor initializes the component's state with various properties:
-  // currentVal: The current number displayed on the screen (default: "0").
-  // prevVal: The previous number used in a calculation (default: "0").
-  // formula: The formula being built (e.g., "2 + 3").
-  // currentSign: Tracks the current sign (positive or negative).
-  // lastClicked: Stores the value of the last button clicked.
-  // Several functions are defined within the class to handle different user interactions:
-  // maxDigitWarning: Displays a message if the number of digits exceeds a limit.
-  // handleEvaluate: Evaluates the current formula using eval and updates the state.
-  // handleOperators: Handles clicks on operator buttons (+, -, *, /).
-  // handleNumbers: Handles clicks on number buttons (0-9).
-  // handleDecimal: Handles clicks on the decimal button.
-  // initialize: Resets the calculator to its initial state.
-  // The render function defines the visual structure of the calculator using JSX:
-  // It creates a main div with the class name "calculator".
-  // It renders three sub-components: Formula, Output, and Buttons.
+      // 2. Calculator Class: This class represents the calculator itself and inherits from React.Component.
+          // The constructor initializes the component's state with various properties:
+          // currentVal: The current number displayed on the screen (default: "0").
+          // prevVal: The previous number used in a calculation (default: "0").
+          // formula: The formula being built (e.g., "2 + 3").
+          // currentSign: Tracks the current sign (positive or negative).
+          // lastClicked: Stores the value of the last button clicked.
+          // Several functions are defined within the class to handle different user interactions:
+          // maxDigitWarning: Displays a message if the number of digits exceeds a limit.
+          // handleEvaluate: Evaluates the current formula using eval and updates the state.
+          // handleOperators: Handles clicks on operator buttons (+, -, *, /).
+          // handleNumbers: Handles clicks on number buttons (0-9).
+          // handleDecimal: Handles clicks on the decimal button.
+          // initialize: Resets the calculator to its initial state.
 
   class Calculator extends React.Component {
     constructor(e) {
@@ -153,6 +150,11 @@
         evaluated: !1,
       });
     }
+
+      // The render function defines the visual structure of the calculator using JSX:
+            // It creates a main div with the class name "calculator".
+            // It renders three sub-components: Formula, Output, and Buttons.
+      
     render() {
       return React.createElement(
         "div",
@@ -184,7 +186,7 @@
               target: "_blank",
               rel: "noreferrer",
             },
-            "Nagasreenivasarao P."
+            "Nagasreenivasarao P"
           )
         )
       );
