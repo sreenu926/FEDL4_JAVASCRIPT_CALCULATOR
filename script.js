@@ -23,13 +23,6 @@
           // formula: The formula being built (e.g., "2 + 3").
           // currentSign: Tracks the current sign (positive or negative).
           // lastClicked: Stores the value of the last button clicked.
-          // Several functions are defined within the class to handle different user interactions:
-          // maxDigitWarning: Displays a message if the number of digits exceeds a limit.
-          // handleEvaluate: Evaluates the current formula using eval and updates the state.
-          // handleOperators: Handles clicks on operator buttons (+, -, *, /).
-          // handleNumbers: Handles clicks on number buttons (0-9).
-          // handleDecimal: Handles clicks on the decimal button.
-          // initialize: Resets the calculator to its initial state.
 
   class Calculator extends React.Component {
     constructor(e) {
@@ -48,6 +41,15 @@
         (this.handleDecimal = this.handleDecimal.bind(this)),
         (this.handleNumbers = this.handleNumbers.bind(this));
     }
+
+        // Several functions are defined within the class to handle different user interactions:
+              // maxDigitWarning: Displays a message if the number of digits exceeds a limit.
+              // handleEvaluate: Evaluates the current formula using eval and updates the state.
+              // handleOperators: Handles clicks on operator buttons (+, -, *, /).
+              // handleNumbers: Handles clicks on number buttons (0-9).
+              // handleDecimal: Handles clicks on the decimal button.
+              // initialize: Resets the calculator to its initial state.
+    
     maxDigitWarning() {
       this.setState({
         currentVal: "Digit Limit Met",
