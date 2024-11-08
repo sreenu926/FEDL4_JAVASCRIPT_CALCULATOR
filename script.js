@@ -103,8 +103,6 @@
     }
 
      // handleNumbers: Handles clicks on number buttons (0-9).
-              // handleDecimal: Handles clicks on the decimal button.
-              // initialize: Resets the calculator to its initial state.
     
     handleNumbers(e) {
       if (!this.state.currentVal.includes("Limit")) {
@@ -128,6 +126,10 @@
               });
       }
     }
+
+    // handleDecimal: Handles clicks on the decimal button.
+              // initialize: Resets the calculator to its initial state.
+    
     handleDecimal() {
       !0 === this.state.evaluated
         ? this.setState({ currentVal: "0.", formula: "0.", evaluated: !1 })
