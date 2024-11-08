@@ -84,9 +84,6 @@
     }
 
      // handleOperators: Handles clicks on operator buttons (+, -, *, /).
-              // handleNumbers: Handles clicks on number buttons (0-9).
-              // handleDecimal: Handles clicks on the decimal button.
-              // initialize: Resets the calculator to its initial state.
     
     handleOperators(e) {
       if (!this.state.currentVal.includes("Limit")) {
@@ -104,6 +101,11 @@
             : this.setState({ prevVal: a, formula: a + t });
       }
     }
+
+     // handleNumbers: Handles clicks on number buttons (0-9).
+              // handleDecimal: Handles clicks on the decimal button.
+              // initialize: Resets the calculator to its initial state.
+    
     handleNumbers(e) {
       if (!this.state.currentVal.includes("Limit")) {
         const { currentVal: t, formula: a, evaluated: r } = this.state,
