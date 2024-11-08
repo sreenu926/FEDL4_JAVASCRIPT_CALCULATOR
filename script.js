@@ -42,12 +42,7 @@
     }
 
         // Several functions are defined within the class to handle different user interactions:
-              // maxDigitWarning: Displays a message if the number of digits exceeds a limit.
-              // handleEvaluate: Evaluates the current formula using eval and updates the state.
-              // handleOperators: Handles clicks on operator buttons (+, -, *, /).
-              // handleNumbers: Handles clicks on number buttons (0-9).
-              // handleDecimal: Handles clicks on the decimal button.
-              // initialize: Resets the calculator to its initial state.
+        // maxDigitWarning: Displays a message if the number of digits exceeds a limit.
     
     maxDigitWarning() {
       this.setState({
@@ -59,6 +54,12 @@
           1e3
         );
     }
+
+    // handleEvaluate: Evaluates the current formula using eval and updates the state.
+              // handleOperators: Handles clicks on operator buttons (+, -, *, /).
+              // handleNumbers: Handles clicks on number buttons (0-9).
+              // handleDecimal: Handles clicks on the decimal button.
+              // initialize: Resets the calculator to its initial state.
     handleEvaluate() {
       if (!this.state.currentVal.includes("Limit")) {
         let expression = this.state.formula;
