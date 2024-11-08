@@ -1,13 +1,12 @@
 (function () {
   // 1. Initial setup: Regular expressions are defined to match operators, numbers ending with operators, and negative signs.
-  // Styles are defined for different button types (clear, operator, equals).
-
+  
   "use strict"; // Enforce Strict Coding Practices
 
   const isOperator = /[x/+-]/,
     endsWithOperator = /[x+-/]$/,
     endsWithNegativeSign = /\d[x/+-]{1}-$/,
-    clearStyle = { background: "#ac3939" },
+    clearStyle = { background: "#ac3939" },  // Styles are defined for different button types (clear, operator, equals).
     operatorStyle = { background: "#666666" },
     equalsStyle = {
       background: "#004466",
