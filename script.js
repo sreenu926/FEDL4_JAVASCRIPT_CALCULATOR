@@ -128,7 +128,6 @@
     }
 
     // handleDecimal: Handles clicks on the decimal button.
-              // initialize: Resets the calculator to its initial state.
     
     handleDecimal() {
       !0 === this.state.evaluated
@@ -149,6 +148,9 @@
                 formula: this.state.formula + ".",
               }));
     }
+
+      // initialize: Resets the calculator to its initial state.
+    
     initialize() {
       this.setState({
         currentVal: "0",
